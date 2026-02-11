@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram Reels Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" type="image/svg+xml">
     <script src="https://kit.fontawesome.com/e39b1fcfaf.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="headding">
-      <p class="headdingtext"><i class="fa-brands fa-instagram"></i>Instagram Reels</p>
-    </div>
-    <div class="app__videos">
+    <div class="app">
+      <div class="headding">
+        <p class="headdingtext"><i class="fa-brands fa-instagram"></i>Instagram Reels</p>
+      </div>
+      <div class="app__videos">
       <div class="video">
         <!-- header starts -->
         <div class="videoHeader">
@@ -23,7 +28,7 @@
         </div>
         <!-- header ends -->
 
-        <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/433877873/rendition/540p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=b8eb0935dee25fbb57da46bb9ad28440634a6da185e185f5a7ee25c8cd3a8e07"></video>
+        <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"></video>
 
         <!-- footer starts -->
         <div class="videoFooter">
@@ -36,23 +41,22 @@
             <span class="material-icons"> music_note </span>
             <marquee>Song Name</marquee>
           </div>
+        </div>
 
-          <div class="videoFooter__actions">
-            <div class="videoFooter_w_actionsLeft">
-              <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-              <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-              <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-            </div>
-            <div class="videoFooter__actionsRight">
-              <div class="videoFooter__stat">
-                <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                <p>12</p>
-              </div>
-              <div class="videoFooter__stat">
-                <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                <p>20</p>
-              </div>
-            </div>
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
           </div>
         </div>
         <!-- footer ends -->
@@ -67,7 +71,7 @@
         </div>
         <!-- header ends -->
 
-        <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/328465444/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=b101936a0a09d435e9d07ffd75c7fbd2968250619a584f30d782b486a0767ed7"></video>
+        <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"></video>
 
         <!-- footer starts -->
         <div class="videoFooter">
@@ -80,23 +84,22 @@
             <span class="material-icons"> music_note </span>
             <marquee>Song Name</marquee>
           </div>
+        </div>
 
-          <div class="videoFooter__actions">
-            <div class="videoFooter_w_actionsLeft">
-              <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-              <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-              <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-            </div>
-            <div class="videoFooter__actionsRight">
-              <div class="videoFooter__stat">
-                <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                <p>12</p>
-              </div>
-              <div class="videoFooter__stat">
-                <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                <p>20</p>
-              </div>
-            </div>
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
           </div>
         </div>
         <!-- footer ends -->
@@ -112,7 +115,7 @@
           </div>
           <!-- header ends -->
   
-          <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/420459266/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=46f03f07fd6cd6d9da52f017ebc55d9cb21bd364f2e186f5de0dc58641436b20"></video>
+          <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"></video>
   
           <!-- footer starts -->
           <div class="videoFooter">
@@ -126,25 +129,26 @@
               <marquee>Song Name</marquee>
             </div>
   
-            <div class="videoFooter__actions">
-              <div class="videoFooter_w_actionsLeft">
-                <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-              </div>
-              <div class="videoFooter__actionsRight">
-                <div class="videoFooter__stat">
-                  <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                  <p>12</p>
-                </div>
-                <div class="videoFooter__stat">
-                  <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                  <p>20</p>
-                </div>
-              </div>
-            </div>
+
           </div>
-          <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
         </div>
 
         
@@ -157,7 +161,7 @@
             </div>
             <!-- header ends -->
     
-            <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/353556576/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=8b835e908309c629f92e1af39c05dab1ea2140dc4fabde73dd685d34d40f7a01"></video>
+            <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"></video>
     
             <!-- footer starts -->
             <div class="videoFooter">
@@ -171,25 +175,26 @@
                 <marquee>Song Name</marquee>
               </div>
     
-              <div class="videoFooter__actions">
-                <div class="videoFooter_w_actionsLeft">
-                  <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                  <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                  <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-                </div>
-                <div class="videoFooter__actionsRight">
-                  <div class="videoFooter__stat">
-                    <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                    <p>12</p>
-                  </div>
-                  <div class="videoFooter__stat">
-                    <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                    <p>20</p>
-                  </div>
-                </div>
-              </div>
+
             </div>
-            <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
           </div>
 
           
@@ -202,7 +207,7 @@
               </div>
               <!-- header ends -->
       
-              <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/353559070/rendition/540p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=f3f85b29e46eb8132e0c0d8452f0e66e0b6a5078c04ac1c5e16629dbc3a64dc9"></video>
+              <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"></video>
       
               <!-- footer starts -->
               <div class="videoFooter">
@@ -216,25 +221,26 @@
                   <marquee>Song Name</marquee>
                 </div>
       
-                <div class="videoFooter__actions">
-                  <div class="videoFooter_w_actionsLeft">
-                    <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                    <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                    <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-                  </div>
-                  <div class="videoFooter__actionsRight">
-                    <div class="videoFooter__stat">
-                      <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                      <p>12</p>
-                    </div>
-                    <div class="videoFooter__stat">
-                      <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                      <p>20</p>
-                    </div>
-                  </div>
-                </div>
+
               </div>
-              <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
             </div>
 
             
@@ -247,7 +253,7 @@
                 </div>
                 <!-- header ends -->
         
-                <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/353573691/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=3d7ba0c3de9c29c88d45c0d195358428b5b909e9c012424e22ede9adea82de7a"></video>
+                <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"></video>
         
                 <!-- footer starts -->
                 <div class="videoFooter">
@@ -261,25 +267,26 @@
                     <marquee>Song Name</marquee>
                   </div>
         
-                  <div class="videoFooter__actions">
-                    <div class="videoFooter_w_actionsLeft">
-                      <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                      <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                      <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-                    </div>
-                    <div class="videoFooter__actionsRight">
-                      <div class="videoFooter__stat">
-                        <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                        <p>12</p>
-                      </div>
-                      <div class="videoFooter__stat">
-                        <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                        <p>20</p>
-                      </div>
-                    </div>
-                  </div>
+
                 </div>
-                <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
               </div>
 
               
@@ -292,7 +299,7 @@
                   </div>
                   <!-- header ends -->
           
-                  <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/366598290/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=9bb40cf45667b0c9282bb7c2104cb37c7df52f49fcb68474bd2459d6fe36d04b"></video>
+                  <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"></video>
           
                   <!-- footer starts -->
                   <div class="videoFooter">
@@ -306,25 +313,26 @@
                       <marquee>Song Name</marquee>
                     </div>
           
-                    <div class="videoFooter__actions">
-                      <div class="videoFooter_w_actionsLeft">
-                        <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                        <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                        <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-                      </div>
-                      <div class="videoFooter__actionsRight">
-                        <div class="videoFooter__stat">
-                          <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                          <p>12</p>
-                        </div>
-                        <div class="videoFooter__stat">
-                          <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                          <p>20</p>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
-                  <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
                 </div>
 
                 
@@ -337,7 +345,7 @@
                     </div>
                     <!-- header ends -->
             
-                    <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/189534168/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=f410cd011d67bf8e0f575ea74a87bffe9a29a06de3f6b42b4c0a0b8e3188eb02"></video>
+                    <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"></video>
             
                     <!-- footer starts -->
                     <div class="videoFooter">
@@ -351,25 +359,26 @@
                         <marquee>Song Name</marquee>
                       </div>
             
-                      <div class="videoFooter__actions">
-                        <div class="videoFooter_w_actionsLeft">
-                          <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                          <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                          <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-                        </div>
-                        <div class="videoFooter__actionsRight">
-                          <div class="videoFooter__stat">
-                            <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                            <p>12</p>
-                          </div>
-                          <div class="videoFooter__stat">
-                            <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                            <p>20</p>
-                          </div>
-                        </div>
-                      </div>
+
                     </div>
-                    <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
                   </div>
 
                   
@@ -382,7 +391,7 @@
                       </div>
                       <!-- header ends -->
               
-                      <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/476015861/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=a7910b20de253244ef3acc26f7235a15a4aa48e6e02c733d62779170dc92b1f6"></video>
+                      <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"></video>
               
                       <!-- footer starts -->
                       <div class="videoFooter">
@@ -396,25 +405,26 @@
                           <marquee>Song Name</marquee>
                         </div>
               
-                        <div class="videoFooter__actions">
-                          <div class="videoFooter_w_actionsLeft">
-                            <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                            <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                            <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-                          </div>
-                          <div class="videoFooter__actionsRight">
-                            <div class="videoFooter__stat">
-                              <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                              <p>12</p>
-                            </div>
-                            <div class="videoFooter__stat">
-                              <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                              <p>20</p>
-                            </div>
-                          </div>
-                        </div>
+
                       </div>
-                      <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
                     </div>
 
                     
@@ -427,7 +437,7 @@
                         </div>
                         <!-- header ends -->
                 
-                        <video playsinline autoplay muted loop class="video__player" src="https://player.vimeo.com/progressive_redirect/playback/377098479/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=497a23d4cf994b32030183aefa04b9f38841f1214804b12c58a6bc029dc2acf2"></video>
+                        <video playsinline autoplay muted loop class="video__player" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"></video>
                 
                         <!-- footer starts -->
                         <div class="videoFooter">
@@ -441,32 +451,64 @@
                             <marquee>Song Name</marquee>
                           </div>
                 
-                          <div class="videoFooter__actions">
-                            <div class="videoFooter_w_actionsLeft">
-                              <button class="likebutton"> <i class="fa-solid fa-heart"></i></i> </button>
-                              <div class="commentbutton"> <i class="fa-solid fa-message"></i> </div>
-                              <div class="sharebutton"> <i class="fa-solid fa-share"></i> </div>
-                            </div>
-                            <div class="videoFooter__actionsRight">
-                              <div class="videoFooter__stat">
-                                <div class="likedbutton"> <i class="fa-solid fa-heart"></i> </div>
-                                <p>12</p>
-                              </div>
-                              <div class="videoFooter__stat">
-                                <span class="commentsbutton"> <i class="fa-solid fa-message"></i> </span>
-                                <p>20</p>
-                              </div>
-                            </div>
-                          </div>
+
                         </div>
-                        <!-- footer ends -->
+
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <span class="material-icons"> favorite_border </span>
+            <p>12k</p>
+          </div>
+
+          <div class="videoSidebar__button" onclick="showComments()">
+            <span class="material-icons"> message </span>
+            <p>230</p>
+          </div>
+
+          <div class="videoSidebar__button">
+            <span class="material-icons"> share </span>
+            <p>Share</p>
+          </div>
+        </div>
+        <!-- footer ends -->
                       </div>
                     </div>
    
 
 
     
-</div>
+        <!-- multiple replacment chunks are used here to handle the repetition. The user has requested changes to ALL videos, so allowMultiple=true with the first chunk handles this efficiently. -->
+      
+      
+      </div>
+      
+      <!-- Comments Modal -->
+      <div class="comments-modal" id="commentsModal">
+        <div class="comments-header">
+          <h3>Comments</h3>
+          <span class="material-icons close-btn" onclick="hideComments()"> close </span>
+        </div>
+        <div class="comments-list">
+          <div class="comment">
+            <strong>user1</strong> <p>Awesome video! 🔥</p>
+          </div>
+          <div class="comment">
+            <strong>user2</strong> <p>Love the song choice 🎵</p>
+          </div>
+          <div class="comment">
+            <strong>user3</strong> <p>Where is this place? 😍</p>
+          </div>
+           <div class="comment">
+            <strong>user4</strong> <p>So cool!</p>
+          </div>
+        </div>
+        <div class="comment-input-area">
+          <input type="text" placeholder="Add a comment..." />
+          <button>Post</button>
+        </div>
+      </div>
+      
+    </div>
     <script>
       const videos = document.querySelectorAll('video');
 
@@ -479,6 +521,50 @@
           }
         });
       }
+
+      function showComments() {
+        const modal = document.getElementById('commentsModal');
+        if (modal) {
+          modal.classList.add('active');
+        }
+      }
+
+      function hideComments() {
+        const modal = document.getElementById('commentsModal');
+        if (modal) {
+          modal.classList.remove('active');
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // Like Buttons
+        const likeButtons = document.querySelectorAll('.videoSidebar__button .material-icons');
+        likeButtons.forEach(btn => {
+          if (btn.innerText.includes('favorite')) {
+             btn.parentElement.addEventListener('click', () => {
+               btn.classList.toggle('liked');
+               if (btn.classList.contains('liked')) {
+                 btn.innerText = 'favorite'; 
+               } else {
+                 btn.innerText = 'favorite_border';
+               }
+             });
+          }
+        });
+
+        // Follow Buttons
+        const followButtons = document.querySelectorAll('.videoFooter__text h3 button');
+        followButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            btn.classList.toggle('following');
+            if (btn.classList.contains('following')) {
+              btn.innerText = 'Following';
+            } else {
+              btn.innerText = 'Follow';
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>
